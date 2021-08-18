@@ -1,15 +1,19 @@
 <template>
-  <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    >
+  <q-page class="">
+    <h1>state : </h1>
   </q-page>
 </template>
 
 <script>
 export default {
-  name: 'PageIndex'
+  name: 'PageIndex',
+  data(){
+    return{
+
+    }
+  },
+  beforMount(){
+    {{ $store }}
+  }
 }
 </script>
