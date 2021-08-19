@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import bnpParibas from './bnp-paribas'
+import bnp from './bnp-paribas'
 
 // import example from './module-example'
 
@@ -18,7 +18,7 @@ Vue.use(Vuex)
 export default function (/* { ssrContext } */) {
   const Store = new Vuex.Store({
     modules: {
-      a: bnpParibas
+      bnp
     },
 
     // enable strict mode (adds overhead!)

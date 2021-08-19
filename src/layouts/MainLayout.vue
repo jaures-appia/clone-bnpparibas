@@ -25,6 +25,7 @@
           <q-separator class="q-mx-sm" vertical />
           <q-btn :to="{ name: 'devenirClient' }" class="myBg-green1 text-white q-pa-sm" outlined rounded no-caps label="Devenir client" v-if="$route.name != 'devenirClient' && $route.name != 'dashbord'"></q-btn>
           <q-btn :to="{ name: 'login' }" class="q-mx-sm myBg-green2 text-white q-pa-sm" outlined rounded no-caps icon="lock" label="Accéder à mon compte" v-if="$route.name != 'login' && $route.name != 'dashbord'"></q-btn>
+          <div v-if="$route.name == 'dashbord'">Koffi Edouard</div>
         </q-toolbar>
       </q-header>
 
